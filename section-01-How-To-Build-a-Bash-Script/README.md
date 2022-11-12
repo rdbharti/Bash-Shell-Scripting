@@ -14,3 +14,12 @@ BASH = **B**ourne **A**gain **SH**ell
 - Its feature rich.
 - Its fast.
 - Commonly used.
+
+## What is a Script?
+- Its a file containing commands for the shell.
+- A Bash Script is a file containing commands for the Bash Shell.
+
+### Why use a script?
+- Scripts allow automation.
+- Save time.
+- Increase Reliability.
