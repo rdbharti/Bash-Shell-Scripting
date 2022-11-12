@@ -4,9 +4,10 @@
 - ls -l : view file permissions
 
 ## 2. Setting file permisiions on your script
-- Give write permissions to owner only \
-  chmod 744 file-name
-
+- Give write permissions to owner only
+```bash
+chmod 744 file-name
+```
  ## Adding Scripts to PATH
 - To view PATHS
 ```bash
