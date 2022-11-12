@@ -45,12 +45,29 @@ exit 0 # exit-code
 ## 2. Professional Component
 
 1. \# Comment
-2. \# Author: <Full-Name>
-3. \# Date Created: <Date>
-4. \# Last Modified: <Date>
+2. \# Author: Full-Name
+3. \# Date Created: Date
+4. \# Last Modified: Date
 
 5. \# Description
    \# Prints Text on Screen
 
 6. \# Usage
    \# our_first_script
+
+```bash
+#!/bin/bash
+# Author: R D Bharti
+# Date Created: 12/11/2022
+# Last Modified: 12/11/2022
+
+# Description
+# Prints Text on Screen
+
+# Usage
+# our_first_script
+
+echo "This is my First Script"
+exit 0 # exit-code
+
+```
