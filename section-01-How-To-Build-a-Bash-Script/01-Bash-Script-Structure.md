@@ -40,3 +40,17 @@ echo "This is my First Script"
 exit 0 # exit-code
 
 ```
+
+----
+## 2. Professional Component
+
+1. \# Comment
+2. \# Author: <Full-Name>
+3. \# Date Created: <Date>
+4. \# Last Modified: <Date>
+
+5. \# Description
+   \# Prints Text on Screen
+
+6. \# Usage
+   \# our_first_script
