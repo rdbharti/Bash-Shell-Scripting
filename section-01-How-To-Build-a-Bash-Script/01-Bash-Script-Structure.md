@@ -28,3 +28,15 @@ Different exit codes tell wheather the code has exit successfullt or unsuccessfu
 
 [Refer exit codes](https://tldp.org/LDP/abs/html/exitcodes.html)
 
+6. make the script-file executable
+```bash
+chmod +x <file-name>
+```
+## SCRIPT
+```bash
+#!/bin/bash
+
+echo "This is my First Script"
+exit 0 # exit-code
+
+```
