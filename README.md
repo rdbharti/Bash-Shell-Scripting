@@ -30,4 +30,4 @@ This repository is for my short notes of Udemy Course
 - Run your bash shell scripts on local and remote servers
 
 
-### And with over 14 practical assignments, you’ll have real-life experience creating bash scripts and problem-solving too, so you’ll be ready to tackle your own bash scripts independently.
+**And with over 14 practical assignments, you’ll have real-life experience creating bash scripts and problem-solving too, so you’ll be ready to tackle your own bash scripts independently.**
