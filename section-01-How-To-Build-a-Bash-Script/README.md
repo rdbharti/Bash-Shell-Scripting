@@ -7,3 +7,10 @@ A shell is 'A **Program** that **interprets** the commands you type in your term
 It is used to give instructions to Operating system.
 
 
+## What is Bash?
+BASH = **B**ourne **A**gain **SH**ell
+
+### Why Bash?
+- Its feature rich.
+- Its fast.
+- Commonly used.
