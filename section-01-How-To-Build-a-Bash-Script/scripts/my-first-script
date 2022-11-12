@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "This is my First Script"
+exit 0 # exit-code
