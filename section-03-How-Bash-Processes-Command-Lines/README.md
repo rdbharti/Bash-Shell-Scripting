@@ -60,3 +60,17 @@ filepath="c:\Users\\$USER\Documents"
 
 # META CHARACTERS AND TOKENISATION
 ----
+
+## Step 1: Tokenisation
+
+Metacharacters are like **punctuation**.
+
+Token is a sequence of characters that is considered as a **single unit** by the shell.
+
+Metacharacters: 
+    |
+    &
+    ;
+    ()
+    <>
+    space, tab, and new-line
