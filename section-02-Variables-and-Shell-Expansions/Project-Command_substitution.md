@@ -16,7 +16,7 @@ echo "You have executed the script from $(pwd). Therefore I will save the backup
 echo "[START BACKUP]"
 echo "[BACKING UP]"
 
-tar -czf "$(pwd)/homeDirBackup_$(date +%d-%m-%Y_%H-%M-%S)".tar.gz ~/* 2>/dev/null
+tar -czf "$(pwd)/homeDirBackup_$(date +%d-%m-%Y_%H-%M-%S)".tar.gz $HOME/* 2>/dev/null
 
 printf "[BACKUP DONE]\n"
 ```
