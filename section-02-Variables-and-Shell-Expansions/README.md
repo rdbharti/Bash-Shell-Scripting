@@ -13,4 +13,4 @@ and perform calculations.
 4. Use some **parameter expansion** tricks to modify that data in a variety of useful ways.
 5. Use **command substitution** to work with the output of commands and save the output inside variables for later use.
 6. Use **arithmetic expansion** and the **bc** command to do simple mathematical calculations
-7 Use **tilde-expansion** and the **brace expansion** to makke working on the command line more convenient.
+7. Use **tilde-expansion** and the **brace expansion** to makke working on the command line more convenient.
