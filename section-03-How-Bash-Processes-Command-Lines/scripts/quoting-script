@@ -13,3 +13,6 @@ echo $filepath # c:\Users\rdb\Documents
 # Single quotes preserve the literal meaning of every single character thet contain
 filepath='c:\Users\rdb\Documents'
 echo $filepath # c:\Users\rdb\Documents
+
+filepath="/home/user/$USER"
+echo $filepath # /home/user/ubuntu

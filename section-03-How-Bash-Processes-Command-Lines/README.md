@@ -49,6 +49,10 @@ echo $filepath # c:\Users\rdb\Documents
 # Single quotes preserve the literal meaning of every single character thet contain
 filepath='c:\Users\rdb\Documents'
 
+# file path to current user Documents path
+# We need double quotes
+filepath="c:\Users\\$USER\Documents"
+
 ```
 
 **NOTE:** we can not use another single quote in a Single Quote, even if its preceded by a backslash
