@@ -34,3 +34,5 @@ This repository is for my short notes of Udemy Course
 
 - [Project: Backup Script](./section-01-How-To-Build-a-Bash-Script/Project.md) 
   - [Code File](./section-01-How-To-Build-a-Bash-Script/scripts/backup_script-Project)
+- [Project: Command Substitution](./section-02-Variables-and-Shell-Expansions/Project-Command_substitution.md)
+  [Code File]()
