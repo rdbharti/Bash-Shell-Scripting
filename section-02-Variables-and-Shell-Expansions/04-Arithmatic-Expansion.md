@@ -72,3 +72,9 @@ Scale value represents number of decimal places
 echo "scale=2; 5/2" |bc # 2.50
 ```
 **NOTE:** scale value need to be used first and then the expression.
+
+exponent in bc
+
+```bash
+echo "5^2" | bc # 25
+```
