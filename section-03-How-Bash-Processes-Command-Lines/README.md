@@ -16,9 +16,9 @@
   - Single Quote ' '
   - Double Quote " "
 
-1. Backslash (\\) \
+1. Backslash (\\):
   - Removes special meaning from **next** character
-2. Single Quotes (' '): \
+2. Single Quotes (' '):
   - Removes special meaning from all the characters inside the quote.
-3. Double Quotes  (" "): \
+3. Double Quotes  (" "):
   - Removes special meaning from **all, except** dollar sign **($)** and backticks **(`)**.
