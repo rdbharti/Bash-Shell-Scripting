@@ -1,2 +1,15 @@
 #!/bin/bash
 
+echo john \& jane # & is used to run certain commands in the backgroundecho john & jane # & is used to run certain commands in the background
+
+# The / itself is a special character
+# It quotes the character which immediately follows
+filepath=c:\Users\rdb\Documents
+echo $filepath # c:UsersrdbDocuments
+
+filepath=c:\\Users\\rdb\\Documents
+echo $filepath # c:\Users\rdb\Documents
+
+# Single quotes preserve the literal meaning of every single character thet contain
+filepath='c:\Users\rdb\Documents'
+echo $filepath # c:\Users\rdb\Documents

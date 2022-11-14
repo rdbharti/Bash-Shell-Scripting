@@ -8,6 +8,8 @@
 
  When the shell is done with these 5 Steps, it will then execute the result.
 
+
+
  # Quoting
  ----
  Quoting is about **Removing Special Meanings**
@@ -22,3 +24,31 @@
   - Removes special meaning from all the characters inside the quote.
 3. Double Quotes  (" "):
   - Removes special meaning from **all, except** dollar sign **($)** and backticks **(`)**.
+
+```bash
+echo john & jane # & is used to run certain commands in the background
+```
+
+Since & has special meaning, the above command will not run the way we expect.
+
+```bash
+echo john \& jane # john & jane
+```
+
+Example-2
+```bash
+# The / itself is a special character
+# It quotes the character which immediately follows
+filepath=c:\Users\rdb\Documents
+echo $filepath # c:UsersrdbDocuments
+
+# One solution could be
+filepath=c:\\Users\\rdb\\Documents
+echo $filepath # c:\Users\rdb\Documents
+
+# Single quotes preserve the literal meaning of every single character thet contain
+filepath='c:\Users\rdb\Documents'
+
+```
+
+**NOTE:** we can not use another single quote in a Single Quote, even if its preceded by a backslash
