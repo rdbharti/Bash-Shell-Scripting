@@ -25,9 +25,9 @@ echo $OLDPWD # /tmp
 
 ```
 
-We can reference 
-  **~+** = $PWD
-  **~-** = $OLDPWD
+We can reference \
+  **~+** = $PWD \
+  **~-** = $OLDPWD \
 
 we can keep using **~-** to keep moving between current and old directory.
 ```bash
