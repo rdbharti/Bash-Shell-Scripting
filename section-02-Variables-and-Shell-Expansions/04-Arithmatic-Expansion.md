@@ -55,3 +55,20 @@ echo $(( 2.5 + 3 ))
 
 # syntax error: invalid arithmetic operator (error token is ".5 + 3 ")
 ```
+
+# bc command to manage decimal
+
+bc = Basic Calculator
+
+```bash
+echo "5/2" | bc # 2
+```
+
+To get the decimal value, we will scale the value \
+by using internal variable 'scale'. \
+Scale value represents number of decimal places
+
+```bash
+echo "scale=2; 5/2" |bc # 2.50
+```
+**NOTE:** scale value need to be used first and then the expression.

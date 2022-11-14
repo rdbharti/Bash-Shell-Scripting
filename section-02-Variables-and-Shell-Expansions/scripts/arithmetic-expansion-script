@@ -34,4 +34,10 @@ echo $(( 5 % 2 )) # 1
 echo $(( 4 % 2 )) # 0
 
 # Decimal
-echo $(( 2.5 + 3 )) # syntax error: invalid arithmetic operator (error token is ".5 + 3 ")
+# echo $(( 2.5 + 3 )) # syntax error: invalid arithmetic operator (error token is ".5 + 3 ")
+
+# bc commands
+echo "BC COMMANDS"
+echo "5/2" | bc
+
+echo "scale=2; 5/2" |bc 
