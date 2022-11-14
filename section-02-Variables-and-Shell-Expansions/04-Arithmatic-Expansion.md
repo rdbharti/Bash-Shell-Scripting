@@ -40,3 +40,8 @@ Exponents **
 ```bash
 echo $(( 4 ** 2 )) # 16
 ```
+
+Modulo operator % -> Returns remainder
+```bash
+echo $(( 5 % 2 )) # 1
+```

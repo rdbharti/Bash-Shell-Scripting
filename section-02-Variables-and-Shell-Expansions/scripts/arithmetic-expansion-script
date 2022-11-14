@@ -25,4 +25,8 @@ echo $(( (2 + 3) * 4 ))
 # Exponents
 echo "Exponent"
 
-echo $(( 4 ** 2 ))
+echo $(( 4 ** 2 )) # 16
+
+# Modulo
+
+echo $(( 5 % 2 )) # 1
