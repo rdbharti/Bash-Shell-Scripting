@@ -10,7 +10,11 @@
 
  # Quoting
  ----
+ Quoting is about **Removing Special Meanings**
 - Three types of quoting.
   - backslases (\\)
   - Single Quote ' '
   - Double Quote " "
+
+1. Backslash (\\)
+    Removes special meaning from **next** character
