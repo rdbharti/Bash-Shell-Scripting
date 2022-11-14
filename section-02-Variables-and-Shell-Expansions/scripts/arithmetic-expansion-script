@@ -30,3 +30,8 @@ echo $(( 4 ** 2 )) # 16
 # Modulo
 
 echo $(( 5 % 2 )) # 1
+
+echo $(( 4 % 2 )) # 0
+
+# Decimal
+echo $(( 2.5 + 3 )) # syntax error: invalid arithmetic operator (error token is ".5 + 3 ")

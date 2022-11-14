@@ -44,4 +44,14 @@ echo $(( 4 ** 2 )) # 16
 Modulo operator % -> Returns remainder
 ```bash
 echo $(( 5 % 2 )) # 1
+
+echo $(( 4 % 2 )) # 0
+```
+
+### Arithmatic Operators Can not manage decimal numbers
+
+```bash
+echo $(( 2.5 + 3 )) 
+
+# syntax error: invalid arithmetic operator (error token is ".5 + 3 ")
 ```
