@@ -31,3 +31,6 @@ This repository is for my short notes of Udemy Course
 
 
 **And with over 14 practical assignments, you’ll have real-life experience creating bash scripts and problem-solving too, so you’ll be ready to tackle your own bash scripts independently.**
+
+- [Project: Backup Script](./section-01-How-To-Build-a-Bash-Script/Project.md)
+  [Bash File](./section-01-How-To-Build-a-Bash-Script/scripts/backup_script-Project)
