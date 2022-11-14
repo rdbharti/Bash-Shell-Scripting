@@ -67,10 +67,10 @@ Metacharacters are like **punctuation**.
 
 Token is a sequence of characters that is considered as a **single unit** by the shell.
 
-Metacharacters: 
-    |
-    &
-    ;
-    ()
-    <>
-    space, tab, and new-line
+#### Metacharacters: 
+- | pipe
+- & ampersand
+- ; semi-colon
+- () parentheses 
+- <> less-greater than
+- space, tab, and new-line
