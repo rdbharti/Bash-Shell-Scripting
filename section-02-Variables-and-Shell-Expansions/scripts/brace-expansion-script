@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# String List
+
+echo {a,20,barry} # a 20 barry
+echo {jan,feb,march,april} # jan feb march april
