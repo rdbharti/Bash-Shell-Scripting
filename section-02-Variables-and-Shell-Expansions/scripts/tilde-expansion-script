@@ -5,3 +5,11 @@ echo ~ # /home/ubuntu
 echo ~durlabh # /home/durlabh
 
 echo ~root /root
+
+cd /tmp
+echo $PWD # /tmp
+
+cd ~/bash-course
+echo $PWD # /home/ubuntu/bash-course
+
+echo $OLDPWD # /tmp
