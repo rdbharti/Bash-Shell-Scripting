@@ -29,3 +29,13 @@ We can create a range with steps \
 echo {1..20..3} # 1 4 7 10 13 16 19
 ```
 
+Example: \
+Create a folder for every #month of the year
+```bash
+mkdir -p $PWD/journal/month_{01..12}
+```
+
+Now Create 31 txt files in each month folder
+```bash
+touch $PWD/journal/month_{01..12}/day_{01..31}.txt
+```

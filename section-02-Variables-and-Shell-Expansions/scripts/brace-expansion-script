@@ -14,3 +14,8 @@ echo {10..5} # 10 9 8 7 6 5
 echo {A..Z} # A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 echo {1..20..3} # 1 4 7 10 13 16 19
+
+# Create a folder for every #month of the year
+# Now Create 31 txt files in each month folder
+mkdir -p $PWD/journal/month_{01..12}
+touch $PWD/journal/month_{01..12}/day_{01..31}.txt
