@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo $(( 4 + 2)) # 6
+
+x=8
+y=9
+
+echo $(( $x + $y ))
+
+# without $ sign
+echo $(( x + y ))
