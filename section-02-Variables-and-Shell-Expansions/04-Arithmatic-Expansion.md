@@ -35,3 +35,8 @@ echo $(( 2 + 3 * 4 )) # 14
 
 echo $(( (2 + 3) * 4 )) # 20 // Brackets evaluted first
 ```
+
+Exponents **
+```bash
+echo $(( 4 ** 2 )) # 16
+```
