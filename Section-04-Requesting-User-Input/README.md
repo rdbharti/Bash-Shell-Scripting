@@ -63,7 +63,7 @@ fi
 
 ```
 
-### $@ and $*
+### \$@ and \$*
 
 - $@ allows us to access all the positional parametes at once that are passed to our script and it separated each paramater with a space.
 - "$@": each parameter is wrapped with double quote. It preventes word spliting from happening eg. "$1" "$2"..."$N"
