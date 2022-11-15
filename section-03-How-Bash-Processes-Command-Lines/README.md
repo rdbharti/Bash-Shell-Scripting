@@ -58,7 +58,7 @@ filepath="c:\Users\\$USER\Documents"
 **NOTE:** we can not use another single quote in a Single Quote, even if its preceded by a backslash
 
 
-# META CHARACTERS AND TOKENISATION
+# 1. META CHARACTERS AND TOKENISATION
 ----
 
 ## Step 1: Tokenisation
@@ -215,3 +215,44 @@ touch "$numbers" # it will create one file with file-name 12345
 - This shows once the shell expanded the value of the variable numbers, it then split that value is seperate words based on the IFS characters.
 - Each of these words i.e 1 2 3 4 5 where given as individual arguments to the touch command.
 - When the variable was quoted **"$numbers"** , the shell did not perform word splitiing.
+
+
+# 5. Globbing
+----
+
+- Originates from the "glob" program present in early versions of Bell Lab's Unix Operating sysstem from 1969-1975.
+- The Glob Program would replace text containing special patent sysmbols with list of file names that matched those patterns.
+- Globbing is used as a shortcut for listing the files that a command should operate on.
+- Globbing is only performed on words (not operators)
+- Globbing Patterns are words that contain unquoted Special Pattern Characters:
+  - \* - match zero or more characters
+  - ?  - match a single character 
+  - []  - match any single characters palced inside the sq. bracket
+- If the shell finds one of these characters unquoted inside a word, then it will perform globiing on that.
+
+Example: \*
+
+```bash
+ls *.txt # list all .txt files
+ls *.pdf # list all .pdf files
+```
+
+Example: ?
+
+```bash
+ls file?.txt # list all the file with name file1.txt file2.txt ... file9.txt
+
+# note it will not list file.txt
+```
+
+Example: []
+
+```bash
+ls file[ab].txt # list files with name filea.txt fileb.txt
+
+ls file[a-g].txt # will match a to g
+
+ls file[0-9].txt # match 0 to 9
+
+ls file[a-z0-9]
+```
