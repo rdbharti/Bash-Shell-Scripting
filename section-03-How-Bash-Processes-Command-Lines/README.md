@@ -105,4 +105,25 @@ Token is a sequence of characters that is considered as a **single unit** by the
     - <\>
     - \>&
 
+**Control operators** and **Redirectional operators** only matter if they are **unquoted**.
+
+```bash 
+echo $HOSTNAME > out.txt
+
+```
+In the above exanple there are 4 MetaCharaters: Spaces(3)+GreaterThanSign > (1)
+
+After Identifying these metacharacters the shell will break this down into words and metacharacters.
+
+echo does not contain unquoted unquoted metacharacter, therefore A WORD
+
+echo = word
+
+$name = word
+
+out.txt = word
+
+Then shell looks for sequence taht contains atleast one metacharacter and look to see if there is any operators within them.
+
+Shell will see the redirection symbol > as an redirection operator.
 
