@@ -186,7 +186,7 @@ echo $name has {1..3} apples and $(( 5 + 2 )) oranges
 # Then Arithmetic
 ```
 
-# 4. Word Splitting
+## 4. Word Splitting
 ----
 
 - **Word Splittin** is a process which the shell performs to split the result of some unquoted expansions into separate words.
@@ -217,7 +217,7 @@ touch "$numbers" # it will create one file with file-name 12345
 - When the variable was quoted **"$numbers"** , the shell did not perform word splitiing.
 
 
-# 5. Globbing
+## 5. Globbing
 ----
 
 - Originates from the "glob" program present in early versions of Bell Lab's Unix Operating sysstem from 1969-1975.
@@ -256,3 +256,6 @@ ls file[0-9].txt # match 0 to 9
 
 ls file[a-z0-9]
 ```
+
+# Quote Removal
+---- 
