@@ -273,3 +273,21 @@ ls file[a-z0-9]
   - Stream 0 = Standard Input (stdin) - Standard input provides us with an alternative way of providing input to a command, aside from using command line arguments.
   - Stream 1 = Standard Output (stdout) - It conatins the data that is produced after a successful command execurtion.
   - Stream 2 = Standard Error (stderr) - It contains all the error messages and status messages that a command produces.
+
+
+Example: 
+
+```bash
+
+echo "Hello world" > hello.txt
+
+cat < hello.txt # Hello world
+
+cd /random_name 2> error.txt # error.txt will contain the error message thrown by the cd command; error will not be displayed on the console
+```
+
+Example: Standard Output and Standard Error Stream to the same place
+
+```bash
+cd /random_name &> /dev/null
+```
