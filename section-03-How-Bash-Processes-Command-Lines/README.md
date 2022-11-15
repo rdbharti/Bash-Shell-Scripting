@@ -129,3 +129,25 @@ Shell will see the redirection symbol > as an redirection operator.
 
 # 2. Command Identification
 ----
+
+### Types of commands
+1. Simple Commands
+   1. Each Simple Command is terminated by a Control Operator.
+   2. If No Control Operator is used then default is new-line Control- operator.
+```bash
+echo 1 2 3
+
+echo a b c ; echo 1 2 3
+```
+2. Compound Commands
+   1. Commpund Commands are eseentially bash's programming contructs
+   2. Ecah compound commannd starts with a **reserved word** and is terminated by a corrosponding **reserved word**.
+```bash
+# start with if
+if [[ 2 -gt 1 ]]; then
+  echo "Hello World"
+fi
+end with fi
+```
+    3. Compound commands can be written over multiple lines.
+
