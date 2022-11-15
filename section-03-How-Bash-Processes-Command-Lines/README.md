@@ -188,3 +188,30 @@ echo $name has {1..3} apples and $(( 5 + 2 )) oranges
 
 # 4. Word Splitting
 ----
+
+- **Word Splittin** is a process which the shell performs to split the result of some unquoted expansions into separate words.
+- Word splitting is only performed on the results of unquoted:
+  - Parameter expansions
+  - command substitutions
+  - Arithmetic expansions
+- The characters used to split words are governed by the IFS (Internal Field Separator) variable.
+  - Space, tab, and newline
+
+```bash
+echo "${IFS}" # we get blank response as spaces, tab and newlines are not visible
+
+echo "${IFS@Q}" # $' \t\n'
+```
+
+example word splitting
+
+```bash
+numbers="1 2 3 4 5"
+touch $numbers # it will create 5 individual files
+
+touch "$numbers" # it will create one file with file-name 12345
+```
+
+- This shows once the shell expanded the value of the variable numbers, it then split that value is seperate words based on the IFS characters.
+- Each of these words i.e 1 2 3 4 5 where given as individual arguments to the touch command.
+- When the variable was quoted **"$numbers"** , the shell did not perform word splitiing.
