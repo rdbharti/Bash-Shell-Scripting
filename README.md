@@ -36,3 +36,5 @@ This repository is for my short notes of Udemy Course
     [Code File](./section-01-How-To-Build-a-Bash-Script/scripts/backup_script-Project)
 - [Project: Command Substitution](./section-02-Variables-and-Shell-Expansions/Project-Command_substitution.md) \
     [Code File](./section-02-Variables-and-Shell-Expansions/scripts/improved-backup-script-Project.sh)
+- [Project: Calculator-Positional Parameter](Section-04-Requesting-User-Input/Project-Positional-Parameters.md) \
+    [code File](Section-04-Requesting-User-Input/scripts/positional-parameter-Project.sh)
