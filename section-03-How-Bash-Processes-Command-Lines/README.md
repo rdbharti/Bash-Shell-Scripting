@@ -185,3 +185,6 @@ echo $name has {1..3} apples and $(( 5 + 2 )) oranges
 # Then $name
 # Then Arithmetic
 ```
+
+# 4. Word Splitting
+----
