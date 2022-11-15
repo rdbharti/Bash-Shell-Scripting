@@ -6,3 +6,7 @@ echo "my favourite color is $3"
 
 # Double digit parameter argument
 echo "The 10th argument is ${10}"
+
+echo $#
+echo $0
+

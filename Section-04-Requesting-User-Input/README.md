@@ -36,3 +36,32 @@ echo "The 10th argument is ${10}"
 
 # 2. Special Parameters
 ----
+### $#
+### $0
+### $*
+### $@
+
+- Parameters that bash gives special meaning.
+- We can't change value of special parameter.
+- Value of special parameter is calculated for us based on our currennt script.
+
+- $# parameter expands to the number of positional parameters that have been provided i.e total number of arguments provided.
+- $0 parameter expands to the name of current shell, if executed from shell; If executed from script, it will return name of the script.
+
+```bash
+./script.sh a b c d
+
+# echo $# = 4
+# echo $0 = ./script.sh
+```
+
+Example:
+```bash
+
+if [[ $# -ne 2]]; then
+    echo "You didn't enter exactly 2 parameters"
+    echo "Usage: $0 <file1> <file2>"
+    exit 1 # non-zero; therefor exit with error
+fi
+
+```

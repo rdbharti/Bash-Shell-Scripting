@@ -9,7 +9,7 @@
 #The first command line argument given to the script will contain the operation that is to be performed on the numbers (either + or -).
 
 # Usage
-# positional-parameter-Project
+# positional-parameter-Project operation a1 a2 a3 a4 a5 a6 a7 a8 a9 
 
 operation=$1
 num1=$2
