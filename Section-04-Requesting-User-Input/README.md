@@ -38,8 +38,6 @@ echo "The 10th argument is ${10}"
 ----
 ### $#
 ### $0
-### $*
-### $@
 
 - Parameters that bash gives special meaning.
 - We can't change value of special parameter.
@@ -64,4 +62,25 @@ if [[ $# -ne 2]]; then
     exit 1 # non-zero; therefor exit with error
 fi
 
+```
+
+### $@
+### $*
+
+- $@ allows us to access all the positional parametes at once that are passed to our script and it separated each paramater with a space.
+- "$@": each parameter is wrapped with double quote. It preventes word spliting from happening eg. "$1" "$2"..."$N"
+
+```bash
+# filename: special-parameter-script.sh
+#!/bin/bash
+
+# ./special-parameter-script.sh {1..10}
+echo $@
+
+echo "$@"
+
+# ./special-parameter-script.sh "file1 abc" "file2 xyz"
+# touch $@ # it created 4 files file1, file2, abc, xyz
+
+touch "$@" # it created two files 'file1 abc', 'file2 xyz'
 ```
