@@ -164,3 +164,24 @@ There are 4 stages of Expansions
 3. Stage 3: Word Splitting
 4. Stage 4: Globbing
 
+Expansions are executed in Ascending stages i.e Stage 1 will be performed first then stage 2 and so on.
+
+Example.
+```bash
+x=10
+echo {1..$x} # Wrong; as Brace Expansion is performed before than parameter expansion
+```
+
+Expansion in the same stage are all given the same priority. And are simply performed in the order they are found on the command line when it is read from left to right.
+
+```bash
+echo $name has $(( 1 + 2 )) apples
+
+# $name is expanded first;
+# and the Arithmetic expansion
+
+echo $name has {1..3} apples and $(( 5 + 2 )) oranges
+# The brace expansion will happen first because its stage 1 expansion.
+# Then $name
+# Then Arithmetic
+```
