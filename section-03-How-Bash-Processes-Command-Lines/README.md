@@ -142,6 +142,7 @@ echo a b c ; echo 1 2 3
 2. Compound Commands
    1. Commpund Commands are eseentially bash's programming contructs
    2. Ecah compound commannd starts with a **reserved word** and is terminated by a corrosponding **reserved word**.
+   3. Compound commands can be written over multiple lines.
 ```bash
 # start with if
 if [[ 2 -gt 1 ]]; then
@@ -149,5 +150,7 @@ if [[ 2 -gt 1 ]]; then
 fi
 end with fi
 ```
-    3. Compound commands can be written over multiple lines.
+
+# 3. Expansion
+----
 
