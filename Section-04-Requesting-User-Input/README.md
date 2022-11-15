@@ -36,8 +36,7 @@ echo "The 10th argument is ${10}"
 
 # 2. Special Parameters
 ----
-### $#
-### $0
+### $# and $0
 
 - Parameters that bash gives special meaning.
 - We can't change value of special parameter.
@@ -64,8 +63,7 @@ fi
 
 ```
 
-### $@
-### $*
+### $@ and $*
 
 - $@ allows us to access all the positional parametes at once that are passed to our script and it separated each paramater with a space.
 - "$@": each parameter is wrapped with double quote. It preventes word spliting from happening eg. "$1" "$2"..."$N"
@@ -83,4 +81,15 @@ echo "$@"
 # touch $@ # it created 4 files file1, file2, abc, xyz
 
 touch "$@" # it created two files 'file1 abc', 'file2 xyz'
+```
+
+- $*: unquoted $* is exactly same as unquoted $@
+- "$*": It will place the first character of the IFS variable between each positional parameter.
+  - By default first character of IFS is space.
+  - IFS variable can be changed; IFS=, 
+  - $1,$2,$3,...,$N
+
+```bash
+IFS=-
+echo "$*" # 1-2-3-4-5-6-7-8-9-10
 ```
