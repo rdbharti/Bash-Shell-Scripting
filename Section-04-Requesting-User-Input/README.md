@@ -1,6 +1,6 @@
 # Requesting User Input
 
-## Positional Parameter
+# 1. Positional Parameter
 ----
 - Command line arguments are information that you give to your script from your command line. Each argument is seperated by a space
 - Positional parameters are parameters set by the shell to store the value of each of these command line arguments.
@@ -32,3 +32,7 @@ echo "my favourite color is $3"
 ```bash
 echo "The 10th argument is ${10}"
 ```
+
+
+# 2. Special Parameters
+----
