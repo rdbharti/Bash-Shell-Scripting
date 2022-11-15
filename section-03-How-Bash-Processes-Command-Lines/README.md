@@ -127,3 +127,5 @@ Then shell looks for sequence taht contains atleast one metacharacter and look t
 
 Shell will see the redirection symbol > as an redirection operator.
 
+# 2. Command Identification
+----
