@@ -24,3 +24,9 @@ The resulting script should enable a user to run calculations using an unlimited
 **Hint 1:** You want to use the special parameter that will expand each position parameter to its own separate word.
 
 **Hint 2:** Don't think too hard! It is possible to do this script with just 1 line of code!
+
+```bash
+
+x=$@
+echo $(( $x ))
+```
