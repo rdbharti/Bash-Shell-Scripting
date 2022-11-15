@@ -154,3 +154,13 @@ end with fi
 # 3. Expansion
 ----
 
+There are 4 stages of Expansions
+1. Stage 1: Brace Expansion
+2. Stage 2: 
+   1. Parameter Expansion
+   2. Arithmetic Expansion
+   3. Command substitution
+   4. Tilde Expansion
+3. Stage 3: Word Splitting
+4. Stage 4: Globbing
+
