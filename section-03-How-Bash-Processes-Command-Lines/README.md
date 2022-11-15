@@ -259,3 +259,9 @@ ls file[a-z0-9]
 
 # Quote Removal
 ---- 
+- Three types of Quotes
+  - BackSlash
+  - Single Quotes
+  - Double Quotes
+
+- Quote Removal : During the quote removal, the shell removes all the unquoted backslashes, single quote characters, and double quote characters that did NOT result from a shell expansion.
