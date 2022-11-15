@@ -74,3 +74,35 @@ Token is a sequence of characters that is considered as a **single unit** by the
 - () parentheses 
 - <> less-greater than
 - space, tab, and new-line
+
+**Word** is a token that does not contain any unquoted metacharacters.
+
+**Operator** is a token that contain at least one unquoted metacharacters.
+
+### Two types of Operators
+- 1. Control Operators
+    - Newline
+    - |
+    - ||
+    - &
+    - &&
+    - ; 
+    - ;;
+    - ;&
+    - ;;&
+    - |&
+    - (
+    - )
+
+- 2. Redirection Operators
+    - <
+    - \>
+    - <<
+    - \>\>
+    - <&
+    - \>|
+    - <<-
+    - <\>
+    - \>&
+
+
