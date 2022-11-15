@@ -265,3 +265,11 @@ ls file[a-z0-9]
   - Double Quotes
 
 - Quote Removal : During the quote removal, the shell removes all the unquoted backslashes, single quote characters, and double quote characters that did NOT result from a shell expansion.
+
+# Redirection
+----
+
+- Data Streams
+  - Stream 0 = Standard Input (stdin) - Standard input provides us with an alternative way of providing input to a command, aside from using command line arguments.
+  - Stream 1 = Standard Output (stdout) - It conatins the data that is produced after a successful command execurtion.
+  - Stream 2 = Standard Error (stderr) - It contains all the error messages and status messages that a command produces.
