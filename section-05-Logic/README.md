@@ -56,6 +56,8 @@ echo 123 || echo 567 # 123
   - -gt : greater-than
   - -geq : greater-than-or-equal-to
   - -leq : less-than-or-equal-to
+
+
 - String test operator
   - = : equals
   - != : not-equals
@@ -75,4 +77,23 @@ echo "${a} ${b}"
 
 [[ -n $a ]] ; echo $? # 0; True, String is non-empty
 [[ -n $c ]] ; echo $? # 1; False, String is NOT non-empty
+```
+
+- File Test Operators
+  - -e : If file exists
+  - -f : isFile and exists; use to check if something is file or directory?
+  - -d : isDirectory and exists
+  - -x : hasExecutionPermission and exists
+
+
+```bash
+[[ -e today.txt ]] ; echo $? # 1 file does not exist
+touch today.txt
+[[ -e today.txt ]] ; echo $? # 0 file exists
+
+[[ -f today.txt ]] ; echo $? # 0 
+[[ -d scripts ]] ; echo $? # 0
+
+[[ -x today.txt ]] ; echo $? # 1
+[[ -x compare-script.sh ]] ; echo $? # 0 
 ```
