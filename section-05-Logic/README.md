@@ -22,4 +22,4 @@
     # 456 
     ```
   - 3. && - Its the AND Operator. The second command runs only if the first command executed successfully
-  - 4. \|\| - Its the OR Operator. The second command runs whether the first command executed successfully or not.
+  - 4. \|\| - Its the OR Operator. The second command runs only if the first command execution failed.
