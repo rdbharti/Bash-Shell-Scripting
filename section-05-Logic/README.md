@@ -56,3 +56,23 @@ echo 123 || echo 567 # 123
   - -gt : greater-than
   - -geq : greater-than-or-equal-to
   - -leq : less-than-or-equal-to
+- String test operator
+  - = : equals
+  - != : not-equals
+  - -z : is String Empty
+  - -n : is String non-empty
+
+```bash
+a=Hello
+b=World
+echo "${a} ${b}"
+[[ $a = $b ]] ; echo $? # 1 ; False
+
+[[ $a != $b ]] ; echo $? # 0 ; True
+
+[[ -z $a ]] ; echo $? # 1; String NOT empty = False 
+[[ -z $c ]] ; echo $? # 0 ; String Empty = True
+
+[[ -n $a ]] ; echo $? # 0; True, String is non-empty
+[[ -n $c ]] ; echo $? # 1; False, String is NOT non-empty
+```
