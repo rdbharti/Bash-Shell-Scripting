@@ -93,3 +93,28 @@ touch "$@" # it created two files 'file1 abc', 'file2 xyz'
 IFS=-
 echo "$*" # 1-2-3-4-5-6-7-8-9-10
 ```
+
+# The Read Command
+----
+
+- It ask the user to provide specific input to the script.
+- The input from user is saved in the REPLY variable.
+
+```bash
+
+~/$ read
+hello # input
+
+~/$ echo $REPLY # hello
+```
+
+- Save input in custom variables
+
+```bash
+~/$ read input1 input2
+Hello World # Inputs are seperated by space
+
+~/$ echo $input1 # hello
+
+~/$ echo $input2 # world
+```
