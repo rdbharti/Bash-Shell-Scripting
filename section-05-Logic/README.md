@@ -102,4 +102,37 @@ touch today.txt
 # IF STATEMENT
 ----
 
--
+- Starts with "if" and end with "fi"
+- IF statement work by checking the exit status of a command.
+
+```bash
+#!/bin/bash
+
+if [[ 2 -gt 1 ]]; then # The semi-colon indicates end of condition command
+    echo "Test Passed"
+fi # Test Passed
+
+if [[ 2 -lt 1 ]]; then
+    echo "-lt Test Passed"
+else
+    echo "-lt test failed"
+fi # -lt test failed
+```
+
+- elif allows to check another condition if previous condition failed.
+
+```bash
+# ELIF
+if [[ 2 -lt 1 ]]; then
+    echo "-lt Test Passed"
+elif [[ 1 -eq 1 ]]; then
+    echo "-eq Test Passed"
+else
+    echo "-lt test failed"
+fi # -eq Test Passed
+
+```
+
+- You Cannot put an elif after an else
+- There is no limit on the amount of elif statement you can have.
+- You can put an if statement inside other if statement (nesting).
