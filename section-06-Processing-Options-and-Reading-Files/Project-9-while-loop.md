@@ -23,3 +23,21 @@ You will also need to use arithmetic expansion to calculate the total number of 
 **Note:** You can use the command “sleep 1s” to make your loop pause for 1 second before looping again.
 
 **Step 3:** Finally, when the script ends, make sure to echo out the statement “Time’s Up!”
+
+```bash
+total_seconds=0
+while getopts "m:s:" opt; do
+case "$opt" in
+    m)
+        total_seconds=$(echo "($OPTARG * 60) + $total_seconds " | bc)
+    ;;
+    s)
+        total_seconds=$(echo "$OPTARG + $total_seconds " | bc)
+    ;;
+    *)
+    ;;
+esac
+done
+
+echo "Total Seconds: $total_seconds"
+```
