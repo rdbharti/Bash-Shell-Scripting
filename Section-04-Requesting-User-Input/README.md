@@ -156,3 +156,15 @@ read -s -t 5 -p "Your Town: " town
 
 
 # Select Command
+----
+
+- It presents the user with menu containing various options and user can select from those options.
+- Synatax: select nameOfVariableToSaveUserResponse
+- if no variable is given, then users' response is saved in default variable RESPONSE
+
+```bash
+select day in mon tue wed thu fri sat sun;
+do
+echo "The day selected is ${day}"
+done 
+```
