@@ -39,5 +39,15 @@ case "$opt" in
 esac
 done
 
-echo "Total Seconds: $total_seconds"
+#echo "Total Seconds: $total_seconds"
+
+while [[ $total_seconds -gt 0 ]]; do
+    clear
+    echo "Time remaining: ${total_seconds}"
+    total_seconds=$(( $total_seconds - 1 ))
+    sleep 1s
+done
+
+clear
+echo "Times Up !!"
 ```

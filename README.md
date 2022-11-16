@@ -46,5 +46,7 @@ This repository is for my short notes of Udemy Course
     [Code File](./Section-04-Requesting-User-Input/scripts/select-command-project.sh)
 - [Project 7: Create a log file if not exist](./section-05-Logic/Project-7-If-Statement.md) \
     [Code File](./section-05-Logic/scripts/if-statement-Project.sh)
-- [Project 8 Case Statement](./section-05-Logic/Project-8-Case-Statement.md) \
+- [Project 8: Case Statement](./section-05-Logic/Project-8-Case-Statement.md) \
     [Code File](./section-05-Logic/scripts/case-statement-Project.sh)
+- [Project 9: While Loop - Timer Project](./section-06-Processing-Options-and-Reading-Files/Project-9-while-loop.md) \
+    [Code File](./section-06-Processing-Options-and-Reading-Files/scripts/while-loop-Project.sh)
