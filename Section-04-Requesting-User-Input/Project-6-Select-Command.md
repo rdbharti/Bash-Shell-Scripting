@@ -28,3 +28,30 @@ Again, use the PS3 shell variable to give the user an appropriate prompt, and ec
 **Step 4:** Finally you need to modify the echo command at the end of the script to make sure that the new data is written to the data file.
 
 **Hint:** Remember to use break to end each select command.
+
+```bash
+read -p "Your Name: " name
+read -p "Your Surname: " surname
+
+PS3="What is your Preference: "
+select phone_type in headset handheld;
+do
+#echo "Your preference is ${phone_type}"
+break
+done
+
+PS3="Your Department: "
+select dept in Finance sales "customer service" engineering;
+do
+#echo "Your Department is ${dept}"
+break
+done
+
+read -N 4 -p "Your Extension Number: " ext_number
+echo ""
+read -s -N 4 -p "Your access-code: " access_code
+
+clear
+
+echo "${name},${surname},${ext_number},${access_code},${phone_type},${dept}" >> extension.csv
+```
