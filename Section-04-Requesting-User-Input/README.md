@@ -118,3 +118,17 @@ Hello World # Inputs are seperated by space
 
 ~/$ echo $input2 # world
 ```
+- -p flag is used to prompt the user
+example:
+
+```bash
+read -p "Your Name: " name
+read -p "Your Age: " age 
+read -p "Your Town: " town
+
+clear
+
+echo "My name is ${name}"
+echo "I am ${age}"
+echo "I am from ${town}"
+```
