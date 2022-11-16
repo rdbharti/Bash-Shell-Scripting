@@ -27,3 +27,17 @@ Your Task
 Append the output of the free command to $HOME/performance/memory.log
 
 **Hint:** The free command in Linux outputs the current memory usage of the computer
+
+```bash
+folder="${HOME}/performance"
+if [[ -d $folder ]]; then
+    echo "${folder} exists"
+else
+    mkdir $folder 
+    if [[ $? -eq 0 ]]; then
+        echo "${folder} created"
+    fi
+fi
+
+free >> $folder/memory.log ; echo
+```

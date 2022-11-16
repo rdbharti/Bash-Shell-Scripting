@@ -44,3 +44,5 @@ This repository is for my short notes of Udemy Course
     [code File](./Section-04-Requesting-User-Input/scripts/read-Project.sh)
 - [Projject 6: Select Command Project](./Section-04-Requesting-User-Input/Project-6-Select-Command.md) \
     [Code File](./Section-04-Requesting-User-Input/scripts/select-command-project.sh)
+- [Project 7: Create a log file if not exist](./section-05-Logic/Project-7-If-Statement.md) \
+    [Code File](./section-05-Logic/scripts/if-statement-Project.sh)
