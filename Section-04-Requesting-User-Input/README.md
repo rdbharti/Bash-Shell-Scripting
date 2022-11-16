@@ -168,3 +168,24 @@ do
 echo "The day selected is ${day}"
 done 
 ```
+- The above example wil run in a loop and will ask for an input after every execution.
+- To rectify this issue, we need to add a break command to get out of the loop.
+
+```bash
+select day in mon tue wed thu fri sat sun;
+do
+echo "The day selected is ${day}"
+break
+done 
+```
+
+- PS3 shell variable controls the prompt String of the select command.
+
+```bash
+PS3="What is the day of the week: "
+select day in mon tue wed thu fri sat sun;
+do
+echo "The day selected is ${day}"
+break
+done 
+```
