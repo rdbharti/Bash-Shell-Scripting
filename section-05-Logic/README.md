@@ -40,9 +40,19 @@ echo 123 || echo 567 # 123
 - If a test is evaluated to be false, the test will return an exit status of one (1).
 - test command is written inside sq. bracket []. There need to be space after [ and befor ]
 - -eq is used to compare equality
+- -ne = not equal
 - $? is used to check exit status of last command
 
 ```bash
-[ 2 -eq 2 ] ; echo $? # exit code 0
-[ 2 -eq 3 ] ; echo $? # exit code 1
+[ 2 -eq 2 ] ; echo $? # exit code 0 true
+[ 2 -eq 3 ] ; echo $? # exit code 1 false
+[ 2 -ne 3 ] ; echo $? # exit code 0 true
+[ 2 -ne 3 ] ; echo $? # exit code 1 false 
 ```
+- test commands
+  - -eq : equals
+  - -ne : not-equals
+  - -lt : less-than
+  - -gt : greater-than
+  - -geq : greater-than-or-equal-to
+  - -leq : less-than-or-equal-to
