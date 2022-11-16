@@ -32,11 +32,13 @@ This repository is for my short notes of Udemy Course
 
 **And with over 14 practical assignments, you’ll have real-life experience creating bash scripts and problem-solving too, so you’ll be ready to tackle your own bash scripts independently.**
 
-- [Project: Backup Script](./section-01-How-To-Build-a-Bash-Script/Project.md) \
+- [Project 1: Backup Script](./section-01-How-To-Build-a-Bash-Script/Project.md) \
     [Code File](./section-01-How-To-Build-a-Bash-Script/scripts/backup_script-Project)
-- [Project: Command Substitution](./section-02-Variables-and-Shell-Expansions/Project-Command_substitution.md) \
+- [Project 2: Command Substitution](./section-02-Variables-and-Shell-Expansions/Project-Command_substitution.md) \
     [Code File](./section-02-Variables-and-Shell-Expansions/scripts/improved-backup-script-Project.sh)
-- [Project: Calculator-Positional Parameter](Section-04-Requesting-User-Input/Project-Positional-Parameters.md) \
+- [Project 3: Calculator-Positional Parameter](Section-04-Requesting-User-Input/Project-Positional-Parameters.md) \
     [code File](Section-04-Requesting-User-Input/scripts/positional-parameter-Project.sh)
-- [Project: Calculator-Special Parameter](Section-04-Requesting-User-Input/Project-SpecialParameters.md) \
+- [Project 4: Calculator-Special Parameter](Section-04-Requesting-User-Input/Project-SpecialParameters.md) \
     [Code File](Section-04-Requesting-User-Input/scripts/Special-Parameters-Project.sh)
+- [Project 5: Read-Command-Project](Section-04-Requesting-User-Input\Project-Read-Command.md) \
+    [code File](Section-04-Requesting-User-Input\scripts\read-Project.sh)

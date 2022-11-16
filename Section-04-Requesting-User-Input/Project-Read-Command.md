@@ -40,3 +40,14 @@ Saving the data like this will make it possible to open the data in Microsoft Ex
 **Hint:** Make sure that the script appends data to the extensions.csv file each time the script is run.
 
 
+```bash
+read -t 5 -p "Your Name: " name
+read -t 5 -p "Your Surname: " surname
+read -t 8 -N 4 -p "Your Extension Number: " ext_number
+echo ""
+read -t 8 -s -N 4 -p "Your access-code: " access_code
+
+clear
+
+echo "${name},${surname},${ext_number},${access_code}" >> extension.csv
+```
