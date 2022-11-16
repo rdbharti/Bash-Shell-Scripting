@@ -29,3 +29,20 @@ echo 123 && echo 234 # 123 \n 234
 
 echo 123 || echo 567 # 123
 ```
+
+
+# Test Commannds and Conditional Operators
+----
+
+- Test Command is a command that can be used in bash to compare different pieces of information.
+- It basically allow to create logical test in bash that can either be true or flase.
+- If a test is evaluated to be true, the test will return an exit status of zero (0).
+- If a test is evaluated to be false, the test will return an exit status of one (1).
+- test command is written inside sq. bracket []. There need to be space after [ and befor ]
+- -eq is used to compare equality
+- $? is used to check exit status of last command
+
+```bash
+[ 2 -eq 2 ] ; echo $? # exit code 0
+[ 2 -eq 3 ] ; echo $? # exit code 1
+```
