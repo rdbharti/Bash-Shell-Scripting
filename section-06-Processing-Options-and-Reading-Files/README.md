@@ -16,3 +16,31 @@ while [[ $num -gt 10 ]]; do
 done
 
 ```
+
+# getopts: Handling Command Line Options
+----
+ - GetOps is used to allow your scripts to accepts options on the command line i.e get the options provided for the script
+- getopts: we provide what are the possible options for the script are.
+- getopts save the arguments provided with the options in a variable OPTARG
+
+Example: Convert Fahrenheit to Celsius and wise versa.
+
+```bash
+#!/bin/bash
+
+while getopts "c:f:" opt; do
+    case $opt in 
+	c)
+		result=$(echo "scale=2; ($OPTARG * (9 / 5)) + 32 " | bc)
+		;;
+	f)
+		result=$(echo "scale=2; ($OPTARG - 32) * (5/9) " | bc)
+		;;
+	*)
+		echo "$opt"
+		;;
+   esac
+
+   echo "$result"
+done
+```
