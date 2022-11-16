@@ -119,6 +119,7 @@ Hello World # Inputs are seperated by space
 ~/$ echo $input2 # world
 ```
 - -p flag is used to prompt the user
+
 example:
 
 ```bash
@@ -131,4 +132,24 @@ clear
 echo "My name is ${name}"
 echo "I am ${age}"
 echo "I am from ${town}"
+```
+
+- Timeout flag (-t time in seconds)
+
+```bash
+read -t 5 -p "Your Name: " name
+
+read -t 5 -p "Your Age: " age
+ 
+read -t 5 -p "Your Town: " town
+```
+
+- Secret flag (-s); It hides display of input from console
+
+```bash
+read -s -t 5 -p "Your Name: " name
+
+read -s -t 5 -p "Your Age: " age
+ 
+read -s -t 5 -p "Your Town: " town
 ```

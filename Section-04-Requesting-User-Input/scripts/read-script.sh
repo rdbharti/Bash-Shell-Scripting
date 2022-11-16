@@ -1,13 +1,13 @@
 #!/bin/bash
 
-read -p "Your Name: " name
+read -s -t 5 -p "Your Name: " name
 
-read -p "Your Age: " age
+read -s -t 5 -p "Your Age: " age
  
-read -p "Your Town: " town
+read -s -t 5 -p "Your Town: " town
 
 clear
 
-echo "My name is ${name}"
-echo "I am ${age}"
-echo "I am from ${town}"
+echo "My name is ${name:-EMPTY}"
+echo "I am ${age:-EMPTY}"
+echo "I am from ${town:-EMPTY}"
