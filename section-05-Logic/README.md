@@ -97,3 +97,9 @@ touch today.txt
 [[ -x today.txt ]] ; echo $? # 1
 [[ -x compare-script.sh ]] ; echo $? # 0 
 ```
+
+
+# IF STATEMENT
+----
+
+-
