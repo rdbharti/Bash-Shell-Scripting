@@ -49,7 +49,7 @@ echo 123 || echo 567 # 123
 [ 2 -ne 3 ] ; echo $? # exit code 0 true
 [ 2 -ne 3 ] ; echo $? # exit code 1 false 
 ```
-- test commands
+- Integer test commands (NOT for DECIMALS)
   - -eq : equals
   - -ne : not-equals
   - -lt : less-than
