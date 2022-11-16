@@ -23,3 +23,9 @@
     ```
   - 3. && - Its the AND Operator. The second command runs only if the first command executed successfully
   - 4. \|\| - Its the OR Operator. The second command runs only if the first command execution failed.
+
+```bash
+echo 123 && echo 234 # 123 \n 234
+
+echo 123 || echo 567 # 123
+```
