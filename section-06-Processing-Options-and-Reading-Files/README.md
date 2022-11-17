@@ -44,3 +44,10 @@ while getopts "c:f:" opt; do
    echo "$result"
 done
 ```
+
+
+# Iterate Over Files with read-while loops
+----
+
+- Iterate over a file line by line.
+- Read-while loops are while loops that use the read command as their test command.
