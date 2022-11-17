@@ -52,3 +52,5 @@ This repository is for my short notes of Udemy Course
     [Code File](./section-06-Processing-Options-and-Reading-Files/scripts/while-loop-Project.sh)
 - [Project 10: Read-While Loop - Create Directory From a List](section-06-Processing-Options-and-Reading-Files/Project-10-read-while-loops.md) \
     [Code File-1](section-06-Processing-Options-and-Reading-Files/scripts/read-while-Project.sh) [Code File-2: Folder_to_create.txt](section-06-Processing-Options-and-Reading-Files/scripts/folders_to_create.txt)
+- [Project 11: For loop - Webpage Header Infromation](./section-07-Arrays-and-For-Loop/Project-11-ForLoopsAndArray.md) \
+    [Code File](./section-07-Arrays-and-For-Loop/scripts/forloop-and-array-Project.sh) | [URL .txt file](./section-07-Arrays-and-For-Loop/scripts/urls.txt)
