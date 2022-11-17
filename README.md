@@ -54,3 +54,5 @@ This repository is for my short notes of Udemy Course
     [Code File-1](section-06-Processing-Options-and-Reading-Files/scripts/read-while-Project.sh) [Code File-2: Folder_to_create.txt](section-06-Processing-Options-and-Reading-Files/scripts/folders_to_create.txt)
 - [Project 11: For loop - Webpage Header Infromation](./section-07-Arrays-and-For-Loop/Project-11-ForLoopsAndArray.md) \
     [Code File](./section-07-Arrays-and-For-Loop/scripts/forloop-and-array-Project.sh) | [URL .txt file](./section-07-Arrays-and-For-Loop/scripts/urls.txt)
+- [Project 12, 13, 14: Script Building Assignment](./section-09-Script-Building-Assignment/Script%2BBuilding%2BAssignment%2BBrief.pdf) \
+    [Code File 1](./section-09-Script-Building-Assignment/scripts/cruft_remover.sh) | [Code File 2](./section-09-Script-Building-Assignment/scripts/folder_organiser.sh) | [Code File 3](./section-09-Script-Building-Assignment/scripts/toolkit.sh)
