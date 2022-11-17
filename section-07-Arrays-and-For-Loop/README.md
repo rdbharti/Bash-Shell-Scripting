@@ -112,3 +112,6 @@ echo "${!files_with_path[@]}"
 echo "${files_with_path[@]@Q}"
 
 ```
+
+# ITERATING OVER ARRAYS WITH FOR LOOP
+----
