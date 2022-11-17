@@ -69,3 +69,6 @@ echo "${numbers[@]}" # 1 2 4 1233 6 7 5
 
 
 ```
+
+# READARRAY COMMAND
+----
