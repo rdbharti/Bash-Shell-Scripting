@@ -72,3 +72,43 @@ echo "${numbers[@]}" # 1 2 4 1233 6 7 5
 
 # READARRAY COMMAND
 ----
+
+- The readarray command converts whateever it reads on its standard input stream into an array
+- syntax: readarray array_name < stdin
+- each element is created at a separate index
+- when the array element is created its created with trailing new-line or space.
+-  
+```bash
+
+readarray day < days.txt
+echo "${day[@]}"
+echo "${!day[@]}" # 0 1 2 3 4 5 6
+
+echo "${day[@]@Q}" # $'Monday\n' $'Tuesday\n' $'Wednesday\n' $'Thursday\n' $'Friday\n' $'Saturday\n' $'Thursday\n'
+```
+- To remove the trailing newline or space, we use -t flag with readarray. readarray -t
+
+```bash
+
+readarray -t day < days.txt
+
+echo "${day[@]@Q}" # 'Monday' 'Tuesday' 'Wednesday' 'Thursday' 'Friday' 'Saturday' 'Thursday'
+
+```
+
+- Create Array from output of a command
+
+```bash
+
+# Array From Output of a command
+echo ""
+echo "Array From Output of a command"
+# create a dir and move to it; create 100 .txt files touch file{001..100}.txt
+# create an array to store absolute path of these 100 files.
+
+readarray -t files_with_path < <(ls ~/bash-course/abc/*)
+echo "${files_with_path[@]}"
+echo "${!files_with_path[@]}"
+echo "${files_with_path[@]@Q}"
+
+```
