@@ -50,3 +50,5 @@ This repository is for my short notes of Udemy Course
     [Code File](./section-05-Logic/scripts/case-statement-Project.sh)
 - [Project 9: While Loop - Timer Project](./section-06-Processing-Options-and-Reading-Files/Project-9-while-loop.md) \
     [Code File](./section-06-Processing-Options-and-Reading-Files/scripts/while-loop-Project.sh)
+- [Project 10: Read-While Loop - Create Directory From a List](section-06-Processing-Options-and-Reading-Files/Project-10-read-while-loops.md) \
+    [Code File](section-06-Processing-Options-and-Reading-Files/scripts/read-while-Project.sh)
