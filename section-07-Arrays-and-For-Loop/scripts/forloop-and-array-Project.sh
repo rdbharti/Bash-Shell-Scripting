@@ -11,3 +11,23 @@
 # Usage
 # forloo-and-array-Project.sh
 
+readarray -t urls < urls.txt
+
+for url in "${urls[@]}"
+do
+    file_name=$(echo $url | cut -d "." -f 2) 
+    curl --head "${url}" > "${file_name}.txt"
+done
+
+########################################
+
+# cut -d "." -f 2 < www.facebook.com
+# delimiter .
+# words cut out is 
+#     www
+#     facebook
+#     com
+# -f 2 means 2nd element i.e facebook
+
+
+############################################
