@@ -115,3 +115,65 @@ echo "${files_with_path[@]@Q}"
 
 # ITERATING OVER ARRAYS WITH FOR LOOP
 ----
+
+- a for loop iterates over a list of words or elements and performs a set of command "for" each element 
+- syntax:
+
+```console
+for VARIABLE in 1 2 3 4 5 .. N
+do
+    command1
+    command2
+    commandN
+done
+
+OR
+	
+for VARIABLE in file1 file2 file3
+do
+    command1 on $VARIABLE
+    command2
+    commandN
+done
+
+OR
+	
+for OUTPUT in $(Linux-Or-Unix-Command-Here)
+do
+    command1 on $OUTPUT
+    command2 on $OUTPUT
+    commandN
+done
+```
+
+- Example:
+
+```bash
+
+for element in first second third; 
+do
+    echo "This is $element"
+done
+
+## OUTPUT
+# This is first
+# This is second
+# This is third
+
+```
+
+- For loop over an array
+
+```bash
+
+echo "For loop over an array"
+
+# create an array 
+readarray -t days < days.txt
+
+for day in "${days[@]}";
+do
+    touch "$day"
+done
+
+```
