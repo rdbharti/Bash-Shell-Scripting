@@ -88,3 +88,34 @@ crontab -e
 
 - we can also schedule cron job by editing `/etc/crontab`
 - After editing resatart the cron service: `sudo systemctl restart cron`
+
+
+# ANACRON
+---
+
+- Anacron can recover missed jobs i.e it will execute the job which was missed when the system was off.
+- Anacron schedules are stored in file /etc/anacrontab (requires sudo privileges)
+- There is no user specific anacrontab
+- Anacron can not be scheduled as granular as cron can be. Anacron can not be set to execute at specific hour or minutes.
+
+- Syntax: ` 'period in days'   'Delay in minutes'  'Job Identifier'  'Command/Script' `
+- period in days: frequency in which our job is executed
+  - 1 = everyday
+  - 7 = every 7 day
+  - @monthly = every month
+- Delay in minutes : Wait a certain amount of time before anacron begin executing scheduled command.
+- Job Identifier : This column allows to provide a reference name to refer back to this particular job in any log files produced by any anacron job.
+- Command/Script to run
+
+- Example:
+```bash
+
+sudo vi /etc/anacrontab
+
+# These replace cron's entries
+1       5       cron.daily      run-parts --report /etc/cron.daily
+7       10      cron.weekly     run-parts --report /etc/cron.weekly
+@monthly        15      cron.monthly    run-parts --report /etc/cron.monthly
+
+
+```
