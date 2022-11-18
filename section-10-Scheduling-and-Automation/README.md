@@ -83,7 +83,7 @@ crontab -e
 # minutes hour DayOfMonth month dayOfWeek   commandToExecute
 *            *   *           *    MON-FRI    ~/bash-course/cron-script.sh
 
-# The above script will run on every minute, every hour, every month, monday to friday
+# The above script will run on every minute of every hour, every month, monday to friday
 ```
 
 - we can also schedule cron job by editing `/etc/crontab`
