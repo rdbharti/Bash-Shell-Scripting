@@ -67,3 +67,5 @@ at now + 2 days # 2 days from now
 - at command will execute only if pc is turned on at the time. If the PC is turned off then that job will fail to execute.
 
 - There is no way to set recurring jobs.
+
+# CRON COMMAND
