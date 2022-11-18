@@ -1,6 +1,9 @@
 # Bash Mastery: The Complete Guide to Bash Shell Scripting
 -----
 
+Course Completion Certificate
+![Certificate](./images/bash-mastery-TheCompleteGuideToBashShellScriptingUDEMY.jpg)
+
 This repository is for my short notes of Udemy Course 
 
 [Bash Mastery: The Complete Guide to Bash Shell Scripting](https://www.udemy.com/course/bash-mastery/)
