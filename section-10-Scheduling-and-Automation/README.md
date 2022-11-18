@@ -69,3 +69,22 @@ at now + 2 days # 2 days from now
 - There is no way to set recurring jobs.
 
 # CRON COMMAND
+----
+
+- It runs a deamon service.
+- Check Status of Cron : ` systemctl status cron `
+- To start cron service : ` systemctl start cron `
+- Syntax: ` crontab -e ` # to edit the crontable.
+- Syntax: minutes hour DayOfMonth month dayOfWeek   commandToExecute
+
+```bash
+crontab -e 
+
+# minutes hour DayOfMonth month dayOfWeek   commandToExecute
+*            *   *           *    MON-FRI    ~/bash-course/cron-script.sh
+
+# The above script will run on every minute, every hour, every month, monday to friday
+```
+
+- we can also schedule cron job by editing `/etc/crontab`
+- After editing resatart the cron service: `sudo systemctl restart cron`
