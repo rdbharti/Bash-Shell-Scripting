@@ -117,5 +117,7 @@ sudo vi /etc/anacrontab
 7       10      cron.weekly     run-parts --report /etc/cron.weekly
 @monthly        15      cron.monthly    run-parts --report /etc/cron.monthly
 
+# Adding Update Script of Project 15
+7   30  update_upgrade_script   /home/ubuntu/bash-course/cron-schedule-update-Project.sh
 
 ```
