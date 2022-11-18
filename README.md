@@ -56,3 +56,5 @@ This repository is for my short notes of Udemy Course
     [Code File](./section-07-Arrays-and-For-Loop/scripts/forloop-and-array-Project.sh) | [URL .txt file](./section-07-Arrays-and-For-Loop/scripts/urls.txt)
 - [Project 12, 13, 14: Script Building Assignment](./section-09-Script-Building-Assignment/Script%2BBuilding%2BAssignment%2BBrief.pdf) \
     [Code File 1](./section-09-Script-Building-Assignment/scripts/cruft_remover.sh) | [Code File 2](./section-09-Script-Building-Assignment/scripts/folder_organiser.sh) | [Code File 3](./section-09-Script-Building-Assignment/scripts/toolkit.sh)
+- [Project 15: Schedule Update-Upgrade, cron job](./section-10-Scheduling-and-Automation/Project-15-Cron-Schedulting.md) \
+    [Code File](./section-10-Scheduling-and-Automation/scripts/cron-schedule-update-Project.sh)
