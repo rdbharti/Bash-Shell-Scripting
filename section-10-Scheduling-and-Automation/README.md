@@ -94,6 +94,7 @@ crontab -e
 ---
 
 - Anacron can recover missed jobs i.e it will execute the job which was missed when the system was off.
+  - If there are more than one missed job, anacron will execute only last missed job not all the missed job.
 - Anacron schedules are stored in file /etc/anacrontab (requires sudo privileges)
 - There is no user specific anacrontab
 - Anacron can not be scheduled as granular as cron can be. Anacron can not be set to execute at specific hour or minutes.
