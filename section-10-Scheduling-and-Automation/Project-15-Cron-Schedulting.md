@@ -29,6 +29,15 @@ Sometimes, updates require a reboot to take effect. Therefore, you need to also 
 
 **Hint:** These commands require escalated privileges to run and so running the script from your normal user’s crontab is not the best way to do this. Do you remember how to modify the system-wide crontab? Review the lecture on cron directories if you are not sure.
 
-```console
-00  00  *  *  *  apt update -y ; apt upgrade -y 
+```bash
+
+# Since the scrippt require reboot and upgrade, it need sudo/root privileges 
+
+sudo vim /etc/crontab
+
+00  00  *  *  *  /home/ubuntu/bash-course/cron-schedule-update-Project.sh 
+
+# restart cron service
+sudo systemctl restart cron
+
 ```
